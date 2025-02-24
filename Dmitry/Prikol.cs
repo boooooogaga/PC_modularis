@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Prikol : MonoBehaviour
 {
-    private FlexComponent flexC;
     public HardwareDataLoader.HardwareData data2Use;
 
     private IEnumerator Start() 
