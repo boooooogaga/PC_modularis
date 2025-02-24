@@ -80,7 +80,15 @@ public class HardwareDataLoader : MonoBehaviour
     private GameObject flexObject;
     [SerializeField] bool debugger = false;
 
-    HardwareData hardware;
+    public HardwareData hardware;
+
+
+    public HardwareData GetHardwareData()
+    {
+        return hardware;
+    }
+
+
     void Start()
     {
         flexObject = GameObject.FindWithTag("flex");
@@ -107,15 +115,7 @@ public class HardwareDataLoader : MonoBehaviour
                 {
                     Debug.LogError("Десериализация не удалась((((");
                     return;
-                }
-                FlexComponent flexComp = flexObject.GetComponent<FlexComponent>();
-                if (flexComp == null)
-                {
-                    flexComp = flexObject.AddComponent<FlexComponent>();
-                }
-                flexComp.SetHardwareData(hardware);
-
-                
+                }              
             }
             else
             {
@@ -127,18 +127,9 @@ public class HardwareDataLoader : MonoBehaviour
             Debug.LogError($"Ошибка при загрузке или десериализации JSON: {e.Message}");
         }
     }
-    public HardwareData GetHardwareData()
-    {
-        return hardware;
-    }
+
+    
+
 }
 
-public class FlexComponent : MonoBehaviour
-{
-    public HardwareDataLoader.HardwareData hardwareData;
 
-    public void SetHardwareData(HardwareDataLoader.HardwareData data)
-    {
-        hardwareData = data;
-    }
-}
