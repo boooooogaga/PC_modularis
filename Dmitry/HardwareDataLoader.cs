@@ -115,15 +115,7 @@ public class HardwareDataLoader : MonoBehaviour
                 {
                     Debug.LogError("Десериализация не удалась((((");
                     return;
-                }
-                FlexComponent flexComp = flexObject.GetComponent<FlexComponent>();
-                if (flexComp == null)
-                {
-                    flexComp = flexObject.AddComponent<FlexComponent>();
-                }
-                flexComp.SetHardwareData(hardware);
-
-                
+                }              
             }
             else
             {
@@ -140,13 +132,4 @@ public class HardwareDataLoader : MonoBehaviour
 
 }
 
-public class FlexComponent : MonoBehaviour
-{
-    public HardwareDataLoader.HardwareData hardwareData;
 
-    public void SetHardwareData(HardwareDataLoader.HardwareData data)
-    {
-        hardwareData = data;
-    }
-    
-}
