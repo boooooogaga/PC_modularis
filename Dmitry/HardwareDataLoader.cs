@@ -79,6 +79,8 @@ public class HardwareDataLoader : MonoBehaviour
 
     private GameObject flexObject;
     [SerializeField] bool debugger = false;
+
+    HardwareData hardware;
     void Start()
     {
         flexObject = GameObject.FindWithTag("flex");
@@ -99,7 +101,7 @@ public class HardwareDataLoader : MonoBehaviour
                 if (debugger) Debug.Log("Чтение...");
                 string jsonData = File.ReadAllText(filePath);
                 if (debugger) Debug.Log("Содержимое Прикола: " + jsonData.Substring(0, Mathf.Min(100, jsonData.Length)) + "..."); // Показываем первые 100 символов для отладки
-                HardwareData hardware = JsonUtility.FromJson<HardwareData>(jsonData);
+                hardware = JsonUtility.FromJson<HardwareData>(jsonData);
 
                 if (hardware == null)
                 {
@@ -124,6 +126,10 @@ public class HardwareDataLoader : MonoBehaviour
         {
             Debug.LogError($"Ошибка при загрузке или десериализации JSON: {e.Message}");
         }
+    }
+    public HardwareData GetHardwareData()
+    {
+        return hardware;
     }
 }
 
