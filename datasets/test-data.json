@@ -1,215 +1,119 @@
 {
-    "GPU": {
-        "NVIDIA GeForce RTX 3080": {
+    "GPU": [
+        {
             "model": "NVIDIA GeForce RTX 3080",
             "memory": "10GB",
             "coreClock": "1440 MHz",
             "socket": "PCIe 4.0",
             "price": 699
         },
-        "AMD Radeon RX 6800 XT": {
+        {
             "model": "AMD Radeon RX 6800 XT",
             "memory": "16GB",
             "coreClock": "1825 MHz",
             "socket": "PCIe 4.0",
             "price": 649
         },
-        "NVIDIA GeForce GTX 1660": {
+        {
             "model": "NVIDIA GeForce GTX 1660",
             "memory": "6GB",
             "coreClock": "1530 MHz",
             "socket": "PCIe 3.0",
             "price": 229
         },
-        "AMD Radeon RX 5700": {
+        {
             "model": "AMD Radeon RX 5700",
             "memory": "8GB",
             "coreClock": "1465 MHz",
             "socket": "PCIe 4.0",
             "price": 349
         },
-        "NVIDIA GeForce RTX 3070": {
+        {
             "model": "NVIDIA GeForce RTX 3070",
             "memory": "8GB",
             "coreClock": "1500 MHz",
             "socket": "PCIe 4.0",
             "price": 499
         }
-    },
-    "CPU": {
-        "Intel Core i9-11900K": {
+    ],
+    "CPU": [
+        {
             "model": "Intel Core i9-11900K",
             "cores": 8,
             "baseClock": "3.5 GHz",
             "socket": "LGA1200"
         },
-        "AMD Ryzen 9 5900X": {
+        {
             "model": "AMD Ryzen 9 5900X",
             "cores": 12,
             "baseClock": "3.7 GHz",
             "socket": "AM4"
-        },
-        "Intel Core i7-10700K": {
-            "model": "Intel Core i7-10700K",
-            "cores": 8,
-            "baseClock": "3.8 GHz",
-            "socket": "LGA1200"
-        },
-        "AMD Ryzen 7 5800X": {
-            "model": "AMD Ryzen 7 5800X",
-            "cores": 8,
-            "baseClock": "3.8 GHz",
-            "socket": "AM4"
         }
-    },
-    "RAM": {
-        "Corsair Vengeance LPX": {
+    ],
+    "RAM": [
+        {
             "model": "Corsair Vengeance LPX",
             "capacity": "16GB",
             "speed": "3200 MHz",
             "type": "DDR4"
         },
-        "G.Skill Trident Z RGB": {
+        {
             "model": "G.Skill Trident Z RGB",
             "capacity": "32GB",
             "speed": "3600 MHz",
             "type": "DDR4"
-        },
-        "Kingston HyperX Fury": {
-            "model": "Kingston HyperX Fury",
-            "capacity": "16GB",
-            "speed": "2666 MHz",
-            "type": "DDR4"
-        },
-        "Crucial Ballistix": {
-            "model": "Crucial Ballistix",
-            "capacity": "16GB",
-            "speed": "3000 MHz",
-            "type": "DDR4"
-        },
-        "Team T-Force Delta RGB": {
-            "model": "Team T-Force Delta RGB",
-            "capacity": "16GB",
-            "speed": "3200 MHz",
-            "type": "DDR4"
         }
-    },
-    "Motherboard": {
-        "ASUS ROG Strix Z490-E": {
+    ],
+    "Motherboard": [
+        {
             "model": "ASUS ROG Strix Z490-E",
             "chipset": "Intel Z490",
             "formFactor": "ATX",
             "gpuSocket": "PCIe 4.0",
             "ramType": "DDR4"
         },
-        "MSI MPG B550 Gaming Edge": {
+        {
             "model": "MSI MPG B550 Gaming Edge",
             "chipset": "AMD B550",
             "formFactor": "ATX",
             "gpuSocket": "PCIe 4.0",
             "ramType": "DDR4"
-        },
-        "Gigabyte Z390 Aorus Ultra": {
-            "model": "Gigabyte Z390 Aorus Ultra",
-            "chipset": "Intel Z390",
-            "formFactor": "ATX",
-            "gpuSocket": "PCIe 3.0",
-            "ramType": "DDR4"
-        },
-        "ASRock B450M Pro4": {
-            "model": "ASRock B450M Pro4",
-            "chipset": "AMD B450",
-            "formFactor": "Micro ATX",
-            "gpuSocket": "PCIe 3.0",
-            "ramType": "DDR4"
-        },
-        "ASUS TUF Gaming X570-Plus": {
-            "model": "ASUS TUF Gaming X570-Plus",
-            "chipset": "AMD X570",
-            "formFactor": "ATX",
-            "gpuSocket": "PCIe 4.0",
-            "ramType": "DDR4"
         }
-    },
-    "SSD": {
-        "Samsung 970 Evo": {
+    ],
+    "SSD": [
+        {
             "model": "Samsung 970 Evo",
             "capacity": "1TB",
-            "interface": "NVMe"
+            "interfaceType": "NVMe"
         },
-        "Western Digital Blue": {
+        {
             "model": "Western Digital Blue",
             "capacity": "500GB",
-            "interface": "SATA"
-        },
-        "Crucial MX500": {
-            "model": "Crucial MX500",
-            "capacity": "1TB",
-            "interface": "SATA"
-        },
-        "Samsung 860 Evo": {
-            "model": "Samsung 860 Evo",
-            "capacity": "500GB",
-            "interface": "SATA"
-        },
-        "Kingston A2000": {
-            "model": "Kingston A2000",
-            "capacity": "1TB",
-            "interface": "NVMe"
+            "interfaceType": "SATA"
         }
-    },
-    "Case": {
-        "NZXT H510": {
+    ],
+    "Case": [
+        {
             "model": "NZXT H510",
             "formFactor": "ATX",
             "color": "Black"
         },
-        "Corsair 4000D": {
+        {
             "model": "Corsair 4000D",
             "formFactor": "ATX",
             "color": "White"
-        },
-        "Fractal Design Meshify C": {
-            "model": "Fractal Design Meshify C",
-            "formFactor": "ATX",
-            "color": "Black"
-        },
-        "Phanteks Eclipse P400A": {
-            "model": "Phanteks Eclipse P400A",
-            "formFactor": "ATX",
-            "color": "Black"
-        },
-        "Cooler Master MasterBox Q300L": {
-            "model": "Cooler Master MasterBox Q300L",
-            "formFactor": "Micro ATX",
-            "color": "Black"
         }
-    },
-    "Cooling System": {
-        "Noctua NH-D15": {
+    ],
+    "CoolingSystem": [
+        {
             "model": "Noctua NH-D15",
             "type": "Air Cooler",
             "fanSize": "140mm"
         },
-        "Corsair H100i RGB Platinum": {
+        {
             "model": "Corsair H100i RGB Platinum",
             "type": "Liquid Cooler",
-            "radiatorSize": "240mm"
-        },
-        "Cooler Master Hyper 212": {
-            "model": "Cooler Master Hyper 212",
-            "type": "Air Cooler",
-            "fanSize": "120mm"
-        },
-        "NZXT Kraken X63": {
-            "model": "NZXT Kraken X63",
-            "type": "Liquid Cooler",
-            "radiatorSize": "280mm"
-        },
-        "be quiet! Dark Rock Pro 4": {
-            "model": "be quiet! Dark Rock Pro 4",
-            "type": "Air Cooler",
-            "fanSize": "120mm"
+            "fanSize": "240mm"
         }
-    }
+    ]
 }
