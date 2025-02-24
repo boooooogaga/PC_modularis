@@ -78,27 +78,27 @@ public class HardwareDataLoader : MonoBehaviour
     }
 
     private GameObject flexObject;
-
+    [SerializeField] bool debugger = false;
     void Start()
     {
         flexObject = GameObject.FindWithTag("flex");
         if (flexObject == null)
         {
-            Debug.LogError("Объект с тегом 'flex' не найден на сцене!");
+            if(debugger) Debug.LogError("Объект с тегом 'flex' не найден на сцене!");
             return;
         }
 
         string filePath = Path.Combine(Application.dataPath, "PC_modularis/datasets/test-data.json");
 
-        Debug.Log($"Пытаемся загрузить файл по пути: {filePath}");
+        if (debugger) Debug.Log($"Пытаемся загрузить файл по пути: {filePath}");
 
         try
         {
             if (File.Exists(filePath))
             {
-                Debug.Log("Чтение...");
+                if (debugger) Debug.Log("Чтение...");
                 string jsonData = File.ReadAllText(filePath);
-                Debug.Log("Содержимое Прикола: " + jsonData.Substring(0, Mathf.Min(100, jsonData.Length)) + "..."); // Показываем первые 100 символов для отладки
+                if (debugger) Debug.Log("Содержимое Прикола: " + jsonData.Substring(0, Mathf.Min(100, jsonData.Length)) + "..."); // Показываем первые 100 символов для отладки
                 HardwareData hardware = JsonUtility.FromJson<HardwareData>(jsonData);
 
                 if (hardware == null)
@@ -117,7 +117,7 @@ public class HardwareDataLoader : MonoBehaviour
             }
             else
             {
-                Debug.LogError($"Файл не найден по пути: {filePath}");
+                if (debugger) Debug.LogError($"Файл не найден по пути: {filePath}");
             }
         }
         catch (System.Exception e)
