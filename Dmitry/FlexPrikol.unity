@@ -150,6 +150,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.175053, y: -6.037459, z: 15.122636}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -167,6 +168,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugger: 0
+  hardware:
+    GPU: []
+    CPU: []
+    RAM: []
+    Motherboard: []
+    SSD: []
+    Case: []
+    CoolingSystem: []
 --- !u!1 &532412908
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +265,7 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -339,6 +349,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -372,6 +383,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59ab6091069f564081c9332cfe6d708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data2Use:
+    GPU: []
+    CPU: []
+    RAM: []
+    Motherboard: []
+    SSD: []
+    Case: []
+    CoolingSystem: []
+  Oleg: NVIDIA GeForce GTX 1660
 --- !u!4 &768993571
 Transform:
   m_ObjectHideFlags: 0
@@ -382,6 +402,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.175053, y: -6.037459, z: 15.122636}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
