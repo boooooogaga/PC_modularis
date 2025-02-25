@@ -127,4 +127,8 @@ public class Prikol : MonoBehaviour
         compatibilityCooler.color = Color.green;
         CoopPanel.SetActive(true);
     }
+    public void EXITCOOPORATE()
+    {
+        CoopPanel.SetActive(false);
+    }
 }
