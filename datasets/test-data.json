@@ -1,0 +1,119 @@
+{
+    "GPU": [
+        {
+            "model": "NVIDIA GeForce RTX 3080",
+            "memory": "10GB",
+            "coreClock": "1440 MHz",
+            "socket": "PCIe 4.0",
+            "price": 699
+        },
+        {
+            "model": "AMD Radeon RX 6800 XT",
+            "memory": "16GB",
+            "coreClock": "1825 MHz",
+            "socket": "PCIe 4.0",
+            "price": 649
+        },
+        {
+            "model": "NVIDIA GeForce GTX 1660",
+            "memory": "6GB",
+            "coreClock": "1530 MHz",
+            "socket": "PCIe 3.0",
+            "price": 229
+        },
+        {
+            "model": "AMD Radeon RX 5700",
+            "memory": "8GB",
+            "coreClock": "1465 MHz",
+            "socket": "PCIe 4.0",
+            "price": 349
+        },
+        {
+            "model": "NVIDIA GeForce RTX 3070",
+            "memory": "8GB",
+            "coreClock": "1500 MHz",
+            "socket": "PCIe 4.0",
+            "price": 499
+        }
+    ],
+    "CPU": [
+        {
+            "model": "Intel Core i9-11900K",
+            "cores": 8,
+            "baseClock": "3.5 GHz",
+            "socket": "Intel Z490"
+        },
+        {
+            "model": "AMD Ryzen 9 5900X",
+            "cores": 12,
+            "baseClock": "3.7 GHz",
+            "socket": "AMD B550"
+        }
+    ],
+    "RAM": [
+        {
+            "model": "Corsair Vengeance LPX",
+            "capacity": "16GB",
+            "speed": "3200 MHz",
+            "type": "DDR4"
+        },
+        {
+            "model": "G.Skill Trident Z RGB",
+            "capacity": "32GB",
+            "speed": "3600 MHz",
+            "type": "DDR4"
+        }
+    ],
+    "Motherboard": [
+        {
+            "model": "ASUS ROG Strix Z490-E",
+            "chipset": "Intel Z490",
+            "formFactor": "ATX",
+            "gpuSocket": "PCIe 4.0",
+            "ramType": "DDR4"
+        },
+        {
+            "model": "MSI MPG B550 Gaming Edge",
+            "chipset": "AMD B550",
+            "formFactor": "ATX",
+            "gpuSocket": "PCIe 4.0",
+            "ramType": "DDR4"
+        }
+    ],
+    "SSD": [
+        {
+            "model": "Samsung 970 Evo",
+            "capacity": "1TB",
+            "interfaceType": "NVMe"
+        },
+        {
+            "model": "Western Digital Blue",
+            "capacity": "500GB",
+            "interfaceType": "SATA"
+        }
+    ],
+    "Case": [
+        {
+            "model": "NZXT H510",
+            "formFactor": "ATX",
+            "color": "Black"
+        },
+        {
+            "model": "Corsair 4000D",
+            "formFactor": "ATX",
+            "color": "White"
+        }
+    ],
+    "CoolingSystem": [
+        {
+            "model": "Noctua NH-D15",
+            "type": "Air Cooler",
+            "fanSize": "140mm"
+        },
+        {
+            "model": "Corsair H100i RGB Platinum",
+            "type": "Liquid Cooler",
+            "fanSize": "240mm"
+        }
+    ]
+}
