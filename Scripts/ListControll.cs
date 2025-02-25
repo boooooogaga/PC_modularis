@@ -110,6 +110,7 @@ public class ListControll : MonoBehaviour
         {
             if (Prikol.prikol.data2Use.Motherboard[i].model == Motherboard)
             {
+                Prikol.prikol.CurrentMother = Prikol.prikol.data2Use.Motherboard[i].model;
                 Prikol.prikol.CurrentSocket = Prikol.prikol.data2Use.Motherboard[i].gpuSocket;
                 Prikol.prikol.CurrentChipset = Prikol.prikol.data2Use.Motherboard[i].chipset;
                 Prikol.prikol.CurrentRAMslot = Prikol.prikol.data2Use.Motherboard[i].ramType;
