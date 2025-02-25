@@ -41,13 +41,13 @@
             "model": "Intel Core i9-11900K",
             "cores": 8,
             "baseClock": "3.5 GHz",
-            "socket": "LGA1200"
+            "socket": "Intel Z490"
         },
         {
             "model": "AMD Ryzen 9 5900X",
             "cores": 12,
             "baseClock": "3.7 GHz",
-            "socket": "AM4"
+            "socket": "AMD B550"
         }
     ],
     "RAM": [
