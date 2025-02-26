@@ -8,7 +8,7 @@ using TMPro;
 
 public class ListControll : MonoBehaviour
 {
-    public TMP_Dropdown dropdownMother;
+    public TMP_Dropdown dropdownMother; //Обращение к компонентам дропдоун
     public TMP_Dropdown dropdownCPU;
     public TMP_Dropdown dropdownGPU;
     public TMP_Dropdown dropdownCase;
@@ -17,14 +17,21 @@ public class ListControll : MonoBehaviour
     
     public void Start()
     {
-        dropdownMother.onValueChanged.AddListener(index => MotherCheck(dropdownMother.options[index].text));
+        
+        dropdownMother.onValueChanged.AddListener(index => MotherCheck(dropdownMother.options[index].text)); //Берем название обьекта из дропдоун с помощью индекса
+        
         dropdownCPU.onValueChanged.AddListener(index => CPUCheck(dropdownCPU.options[index].text));
+
         dropdownGPU.onValueChanged.AddListener(index => GPUCheck(dropdownGPU.options[index].text));
+
         dropdownRAM.onValueChanged.AddListener(index => RAMCheck(dropdownRAM.options[index].text));
+
         dropdownCase.onValueChanged.AddListener(index => CaseCheck(dropdownCase.options[index].text));
+
         dropdownCoolSystem.onValueChanged.AddListener(index => CoolCheck(dropdownCoolSystem.options[index].text));
+        
     }
-    public void MotherCheck(string Motherboard)
+    public void MotherCheck(string Motherboard) //Перебираем масив компонентов с помощью цикла и берем хар. определенного выбраного компонента
     {
         for (int i = 0; i < Prikol.prikol.data2Use.Motherboard.Length; i++)
         {
