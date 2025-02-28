@@ -15,13 +15,6 @@ public class Prikol : MonoBehaviour
     public HardwareDataLoader.HardwareData data2Use;
 
     [SerializeField] public GameObject CoopPanel;
-
-    public string Oleg = "Tema";
-    public bool GPUCoop = false;
-    public bool CPUCoop = false;
-    public bool RAMCoop = false;
-    public bool CaseCoop = false;
-    public bool CoolerCoop = true;
     public string CurrentMother;
     public string CurrentSocket;
     public string CurrentChipset;
@@ -63,12 +56,13 @@ public class Prikol : MonoBehaviour
     {
         if(CurrentGPUsocket == CurrentSocket)
         {
-            GPUCoop = true;
+            PlayerPrefs.SetInt("GPU_Coop" , 1);
             compatibilityGPU.text = "true";
             compatibilityGPU.color = Color.green;
         }
         else
         {
+            PlayerPrefs.SetInt("GPU_Coop" , 0);
             compatibilityGPU.text = "false";
             compatibilityGPU.color = Color.red;
         }
@@ -77,12 +71,13 @@ public class Prikol : MonoBehaviour
     {
         if (CurrentCPUsocket == CurrentChipset)
         {
-            CPUCoop = true;
+            PlayerPrefs.SetInt("CPUCoop", 1);
             compatibilityCPU.text = "true";
             compatibilityCPU.color = Color.green;
         }
         else
         {
+            PlayerPrefs.SetInt("CPUCoop", 0);
             compatibilityCPU.text = "false";
             compatibilityCPU.color = Color.red;
         }
@@ -91,12 +86,13 @@ public class Prikol : MonoBehaviour
     {
         if (CurrentRAMslot == CurrentRAMtype)
         {
-            RAMCoop = true;
+            PlayerPrefs.SetInt("RAMCoop", 1);
             compatibilityRAM.text = "true";
             compatibilityRAM.color = Color.green;
         }
         else
         {
+            PlayerPrefs.SetInt("RAMCoop", 0);
             compatibilityRAM.text = "false";
             compatibilityRAM.color = Color.red;
         }
@@ -105,12 +101,13 @@ public class Prikol : MonoBehaviour
     {
         if(CurrentCasetype == CurrentCaseSlot)
         {
-            CaseCoop = true;
+            PlayerPrefs.SetInt("CaseCoop", 1);
             compatibilityCase.text = "true";
             compatibilityCase.color = Color.green;
         }
         else
         {
+            PlayerPrefs.SetInt("CaseCoop", 0);
             compatibilityCase.text = "false";
             compatibilityCase.color = Color.red;
         }
