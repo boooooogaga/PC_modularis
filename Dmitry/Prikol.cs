@@ -56,13 +56,13 @@ public class Prikol : MonoBehaviour
     {
         if(CurrentGPUsocket == CurrentSocket)
         {
-            PlayerPrefs.SetInt("GPU_Coop" , 1);
+            PlayerPrefs.SetInt("GPUCoop" , 1);
             compatibilityGPU.text = "true";
             compatibilityGPU.color = Color.green;
         }
         else
         {
-            PlayerPrefs.SetInt("GPU_Coop" , 0);
+            PlayerPrefs.SetInt("GPUCoop" , 0);
             compatibilityGPU.text = "false";
             compatibilityGPU.color = Color.red;
         }

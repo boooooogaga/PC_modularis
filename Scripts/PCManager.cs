@@ -9,15 +9,15 @@ public class PCManager : MonoBehaviour
     [SerializeField] GameObject Case;
     void Start()
     {
-        if(PlayerPrefs.GetInt("CPUCOOP") == 1)
+        if(PlayerPrefs.GetInt("CPUCoop") == 1)
         {
             CPU.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("GPUCOOP") == 1)
+        if (PlayerPrefs.GetInt("GPUCoop") == 1)
         {
             GPU.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("CaseCOOP") == 1)
+        if (PlayerPrefs.GetInt("CaseCoop") == 1)
         {
             Case.SetActive(true);
         }
