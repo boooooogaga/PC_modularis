@@ -13,13 +13,16 @@ public class PCManager : MonoBehaviour
         {
             CPU.SetActive(true);
         }
+        else CPU.SetActive(false);
         if (PlayerPrefs.GetInt("GPUCoop") == 1)
         {
             GPU.SetActive(true);
         }
+        else GPU.SetActive(false);
         if (PlayerPrefs.GetInt("CaseCoop") == 1)
         {
             Case.SetActive(true);
         }
+        else Case.SetActive(false);
     }
 }
